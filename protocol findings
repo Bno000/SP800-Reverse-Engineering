@@ -1,0 +1,21 @@
+The controller uses 2 RJ11 plugs to communicate with 2 controllers. We are going to use the second RJ11 jack to connect the ESP32 up to.
+Protocol is RS485. 
+Baud rate is 115200
+
+There seems to be a constant keepalive on the wire, then text is sent in plain text from the main unit over the wire and button presses are sent back down the wire.
+
+From what I can see it appears the LCD board is a dumb driver board only and all the logic is handled on the main unit.
+
+A max485 or equivalent should do the job to get you back to TTL
+RJ11 jack
+
+RED = 12V
+BLACK = GND
+GREEN = RS485 A
+YELLOW = RS485 B
+
+Pinout
+1 = YELLOW
+2 = GREEN
+3 = RED
+4 = BLACK
