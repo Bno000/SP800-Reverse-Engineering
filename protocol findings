@@ -1,6 +1,6 @@
 The controller uses 2 RJ11 plugs to communicate with 2 controllers. We are going to use the second RJ11 jack to connect the ESP32 up to.
 Protocol is RS485. 
-Baud rate is 115200
+Baud rate is 19200
 
 There seems to be a constant keepalive on the wire, then text is sent in plain text from the main unit over the wire and button presses are sent back down the wire.
 
